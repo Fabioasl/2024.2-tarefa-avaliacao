@@ -70,6 +70,17 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 **Copilot informa**: Essa questão incentiva os alunos a considerarem tanto os aspectos econômicos quanto os de segurança ao avaliar diferentes arquiteturas de sistemas operacionais.
 
+## Resposta
+- Complexidade de implementação e manutenção
+Monolítica -> No sistema monolítico e implementado em um bloco maciço, onde o código que está operando tem acesso a todos os recursos do hardware e sem restrições quando se trata de acessar a memória, já a manutenção do sistema monolítico é mais complexa e mais custosa devido os componentes do sistema terem acesso um ao outro de forma irrestrita,ou seja qualquer erro pode afetar várias partes do sistema.
+
+Microkernel -> No microkernel a implementação é feita por meio da separação do código de alto nível e de baixo nível, onde o hardware irá apenas gerenciar o código de baixo nível e outras abstrações básicas, e a manutenção desse sistema e mais fácil e menos custosa devido os componentes serem isolados desse modo os erros podem ser corrigidos de forma individual, não afetando as outras partes do sistema.
+
+Camadas -> No sistema de camadas a implementação é feita por meio da divisão de camadas: camada inferior a qual tem acesso total com o hardware, camada intermediária responsável pela abstração e gerência e a camada superior seria a interface do núcle para as aplicações, a manunteção desse sistema é fácil devido o sistema ser separado em camadas.
+
+- Necessidade de especialização da equipe
+
+
 # Questão 3. Introdução à Segurança de Sistemas Operacionais
 
 ## Texto informativo
