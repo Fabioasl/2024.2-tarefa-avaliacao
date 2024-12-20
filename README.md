@@ -23,6 +23,9 @@ Considere as funções e objetivos principais de um sistema operacional conforme
 
 **Copilot informa**: Essa questão incentiva os alunos a explorarem os conceitos fundamentais e a aplicarem o conhecimento teórico em situações práticas. Se precisar de mais alguma coisa, estou aqui para ajudar!
 
+## Resposta
+O sistema operacional (SO) gerencia os recursos de hardware e software de diversas maneiras, para o gerenciamento de processos é possível observar que o sistema tenta dividir de maneira justa a capacidade de processamento pois dependendo da tarefa elas podem monopolizar a CPU fazendo com o que nenhuma outra tarefa seja executada, além disso as prioridades definidas pelo usuário também sao levadas em consideração na hora de dividir o uso da CPU. Já na parte de gerencia de memória o SO fornece a cada aplicaçao uma área de memória própria isolada das demais aplicações e do próprio SO o que melhora a estabilidade e segurança do sistema. Na parte de gerenciamento dos dispositivos de entrada e saida é realizado por meio de um dispositivo denonimado controladores de dispositivos os quais são responsáveis por permitir que o software interaja com o hardware sendo essas interações as seguintes ações: aceitar, executar, desligar. Por fim o gerenciamento de arquivos também é feita pelos controladores de dispositivos visando criar arquivos e diretórios, os dispositivos definem as regras de uso e interface de acesso necessária para o sistema.
+
 # Questão 2. Estrutura de sistemas operacionais
 
 ## Texto informativo
@@ -72,6 +75,7 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 ## Resposta
 - Complexidade de implementação e manutenção
+
 Monolítica -> No sistema monolítico e implementado em um bloco maciço, onde o código que está operando tem acesso a todos os recursos do hardware e sem restrições quando se trata de acessar a memória, já a manutenção do sistema monolítico é mais complexa e mais custosa devido os componentes do sistema terem acesso um ao outro de forma irrestrita,ou seja qualquer erro pode afetar várias partes do sistema.
 
 Microkernel -> No microkernel a implementação é feita por meio da separação do código de alto nível e de baixo nível, onde o hardware irá apenas gerenciar o código de baixo nível e outras abstrações básicas, e a manutenção desse sistema e mais fácil e menos custosa devido os componentes serem isolados desse modo os erros podem ser corrigidos de forma individual, não afetando as outras partes do sistema.
@@ -80,6 +84,27 @@ Camadas -> No sistema de camadas a implementação é feita por meio da divisão
 
 - Necessidade de especialização da equipe
 
+Monolítica -> Devido o sistema monolítico ser conectado, sem restrições e qualquer modificação pode afetar várias partes do sistema é necessário se ter uma equipe com uma boa base em desenvolvimento e manuntenção de sistemas. 
+
+Microkernel -> No microkernel é necesário se ter uma equipe bastante especializada devido sua arquitetura ser baseada em sistemas isolados, sendo assim, cada problema pode ser muito diferente do outro, além de que esses sistemas são implementados em contextos altamente especializados como: sistemas embarcados, dispositivos de tempo real entre outros.
+
+Camadas -> O sistema de camadas não requer tanta especialização sendo mais fácil de manipular do que o microkernel, mas exige um certo nível de conhecimento para que as camadas sejam gerenciadas de forma certa sem nenhum erro.
+
+- Potenciais vulnerabilidades de segurança
+
+Monolíticas -> O sistema monolítico é bastante vulnerável pelo fato do sistema ser todo conectado e sem nenhuma restrição, sendo assim, Qualquer brecha no sistema pode ter um impacto significativo, comprometendo a segurança e a integridade de toda a aplicação.
+
+Microkernel -> Devido ao fato do sistema microkernel ser feito em forma de blocos isolados onde cada parte do sistema não depende da outra ele possui é mais seguro e menos vulnerável, mas isso  não quer dizer que ele está imune a ataques.
+
+Camadas -> O sistema de camadas também é mais seguro pois se uma camada foi afetada o restante do sistema não necessariamente vai ser comprometido.
+
+- Facilidade de atualização e correção de falhas
+
+Monolíticas -> A facilidade de atualização e correção de falhas no sistema monolítico pode ser meio limitada devido ao fato dele ser todo conectado ou seja uma atualização/correção de falha será necessário mexer no sistema todo para que isso seja solucionado.
+
+Microkernel -> No microkernel a facilidade de atualização e correção de falhas é mais fácil do que no sistema monolítico porém requer uma atenção maior na parte de coordenação entre os módulos e compatibilidade durante as alterações.
+
+Camadas -> No sistema baseado em camadas as facilidade de atualização e correção são facilitadas devido as camadas oferecerem boa modularidade, porém pode se tornar complexo de acordo com o tamanho do sistema.
 
 # Questão 3. Introdução à Segurança de Sistemas Operacionais
 
