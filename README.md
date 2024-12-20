@@ -134,6 +134,43 @@ Considerando os mecanismos de segurança discutidos, analise como a implementaç
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre o equilíbrio entre segurança, performance e usabilidade, aplicando conceitos teóricos a contextos práticos.
 
+## Resposta
+- Benefícios e desafios de cada mecanismo
+
+Controle de acesso -> Para o controle de acesso temos os benefícios como segurança e proteção contra acesso não autorizado, já para os desafios temos complexidade e performance.
+
+Criptografia -> Na criptografia os benefícios são maior segurança principalmente contra roubo de dados e maior confidenciabilidade dos dados, já para os desafios temos perfomance e complexidade
+
+Auditoria e Monitoramento -> para auditoria e monitoramento temos os seguintes benefícios: detecção de ameaças, rastreamento de atividades e confirmade, já para os desafios temos a sobrecarga de perfomance, armazenamento e análise de dados e alertas falsos.
+
+Isolamento de Processos -> para Isolamento de Processos é possível identificar os seguintes benefícios: segurança, estalabilidade e proteção de dados, já para os desafios temos pricipalmente a complexidade de comunicação e gerenciamento de recursos.
+
+Atualizações e Patches -> no controle de Atualizações e Patches temos os principais benefícios sendo correção de vulnerabilidades e melhoria de desempenho, já para os desafios temos compatibilidade e riscos de falhas.
+
+- Impacto na experiência do usuário
+
+Controle de acesso -> O controle de acesso em geral tem impacto positivo na experiência do usuário tendo em vista que a melhora na segurança garante que apenas os usuários desejados vão ter acesso aos arquivos desejados impedindo que pessoas não autorizadas tenham esse acesso.
+
+Criptografia -> A criptografia em maior parte tem um impacto na experiência do usuário pois ela garante maior segurança e confidencialidade nos dados dos usuários.
+
+Auditoria e Monitoramento -> A auditoria e monitoramento podem impactar de forma negativa na experiência do usuário se forem implementadas de forma errada, porém elas são essenciais quando o assunto é garantir mais segurança e confidencialidade ao usuário.
+
+Isolamento de Processos -> O isolamento de processos dependendo da forma que é implementada pode impactar negativamente queda da perfomance devido ao consumo adicional de recursos, mas em geral ela melhora principalmente a segunraça e também a estabilidade do sistema.
+
+Atualizações e Patches -> Atualizações e Patches são essenciais para manter um sistema funcional, porém seu impacto é relativo quando se trata da experiência do usuário podendo impactar tanto negativamente quanto positivamente.
+
+- Exemplos de situações onde esses mecanismos são críticos
+
+Controle de acesso -> O controle de acesso tem um principal papel quando se trata de proteção dados sensíveis, evitando acessos não autorizados, fraudes e vazamentos de dados, sendo trivial para que uma boa segurança seja garantida nos sistemas do dia a dia.
+
+Criptografia -> A criptografia geralmente tem um papel fundamental quando se trata de mensagens, transações financeiras e comunicações em redes públicas atuando principalmente na confidencialidade e garantia de que sua mensagem não sera interceptada por terceiros, gerando assim, uma maior segurança nos seus dados.
+
+Auditoria e Monitoramento -> A Auditoria e Monitoramento são essencias para garantir segurança, integridade e disponibilidade dos sistemas sendo de suma importância para que os mesmos funcionce de forma correta e segura.
+
+Isolamento de Processos -> O isolamento de processos é fundamental quando se trata do funcionamento independente dos aplicativos, impedindo que os mesmos interfiram nas ações uns dos outros o que acaba por resultar em uma melhor estabilidade do sistema.
+
+Atualizações e Patches -> As atualizações e patches são indispensáveis quando o assunto é  estabildiade e perfomance do sistema, atuando principalmente na correção de bugs e falhas que podem ser prejudicias ao sistema.
+
 
 # Questão 4. Custo de Processamento versus Algoritmo Ótimo de Escalonamento
 
@@ -164,6 +201,48 @@ Considerando os conceitos de custo de processamento e algoritmo ótimo de escalo
 **Dica:** Pense em como esses algoritmos são aplicados em diferentes cenários, como sistemas de tempo real, servidores web e sistemas operacionais de uso geral.
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre a complexidade e os trade-offs envolvidos na escolha de um algoritmo de escalonamento, aplicando conceitos teóricos a contextos práticos.
+
+## Resposta
+- Vantagens e desvantagens de pelo menos dois algoritmos de escalonamento
+
+Algoritmo escolhido -> First-Come, First-Served (FCFS)
+
+Vantagens
+
+- Simples e fácil de executar
+- requer pouca preparação para a programação de recursos 
+- fácil de comunicar o processo para parceiros de transporte
+
+Desvantagens
+
+- Execução lenta
+- Sem preempção
+
+
+
+Shortest Job Next (SJN) 
+
+Vantagens
+
+- Melhor desempenho para processos pequenos
+- Simplicidade
+
+Desvantagens
+
+- inanição de processos com longos tempo de execução
+- Sobrecarga de Gerenciamento
+
+- Impacto do custo de processamento na escolha do algoritmo
+
+Algoritmo -> First-Come, First-Served (FCFS): O custo do algoritmo FCFS pode variar bastante, se o sistema for de grande tamanho e complexo ele custa bastante devido ao aumento do tempo de espera, porém em sistemas simples ele pode ser bastante eficaz e possuir baixo custo operacional.
+
+
+
+Algoritmo -> Shortest Job Next (SJN): o Custo do algoritmo SJN pode variar de acordo com o tempo médio de espera fatores como starvation e complexidade de implementação aumenta o custo desse algoritmo.
+
+- Exemplos de situações onde um algoritmo pode ser preferível a outro
+Em sistemas mais simples e de fácil implementação pode ser preferível utilizar o algoritmo FCFS, já em sistemas com recursos limitados, tarefas não iterativas e com processos muitos curtos é melhor se usar o SJN. 
+
 
 # Questão 5. Aplicativo em python vs aplicativos em c
 
