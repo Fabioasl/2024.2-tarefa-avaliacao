@@ -254,12 +254,16 @@ Explique o caminho que as instruções seguem desde um aplicativo escrito em Pyt
 - A tradução final das instruções para o formato binário (0 e 1) executado pelo hardware
 
 ## Resposta
+
 - Código em C
+
 #include <stdio.h>
 
+
 int main() {
-    int a, b, soma;
-    printf("Digite o valor de a: ");
+
+    int a, b, soma; 
+    printf("Digite o valor de a: ");     
     scanf("%d", &a);
     printf("Digite o valor de b: ");
     scanf("%d", &b);
@@ -281,8 +285,11 @@ No código disposto apesar o código não interagir diretamente com os drivers a
 
 - Código em python
 
+
 a = int(input("Digite o primeiro número: "))
+
 b = int(input("Digite o primeiro número: "))
+
 print(a+b)
 
 - O papel do interpretador no caso do Python
