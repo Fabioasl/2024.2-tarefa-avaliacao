@@ -239,6 +239,7 @@ Algoritmo -> First-Come, First-Served (FCFS): O custo do algoritmo FCFS pode var
 Algoritmo -> Shortest Job Next (SJN): o Custo do algoritmo SJN pode variar de acordo com o tempo médio de espera fatores como starvation e complexidade de implementação aumenta o custo desse algoritmo.
 
 - Exemplos de situações onde um algoritmo pode ser preferível a outro
+  
 Em sistemas mais simples e de fácil implementação pode ser preferível utilizar o algoritmo FCFS, já em sistemas com recursos limitados, tarefas não iterativas e com processos muitos curtos é melhor se usar o SJN. 
 
 
