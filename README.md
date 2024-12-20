@@ -5,6 +5,8 @@
 - **Público alvo**: alunos da disciplina de SO (Sistemas Operacionais) do curso de TADS (Superior em Tecnologia em Análise e Desenvolvimento de Sistemas) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central).
 - disciplina: **SO** Sistemas Operacionais
 - professor: [Leonardo A. Minora](https://github.com/leonardo-minora)
+- aluno: Fábio Alexandre de Souza Lucena Filho
+- matrícula: 20232014040021
 
 ## Avaliação
 - **Lembre de fazer o fork deste repositório**
@@ -218,8 +220,6 @@ Desvantagens
 - Execução lenta
 - Sem preempção
 
-
-
 Shortest Job Next (SJN) 
 
 Vantagens
@@ -236,8 +236,6 @@ Desvantagens
 
 Algoritmo -> First-Come, First-Served (FCFS): O custo do algoritmo FCFS pode variar bastante, se o sistema for de grande tamanho e complexo ele custa bastante devido ao aumento do tempo de espera, porém em sistemas simples ele pode ser bastante eficaz e possuir baixo custo operacional.
 
-
-
 Algoritmo -> Shortest Job Next (SJN): o Custo do algoritmo SJN pode variar de acordo com o tempo médio de espera fatores como starvation e complexidade de implementação aumenta o custo desse algoritmo.
 
 - Exemplos de situações onde um algoritmo pode ser preferível a outro
@@ -253,6 +251,50 @@ Explique o caminho que as instruções seguem desde um aplicativo escrito em Pyt
 - O processo de compilação no caso do C
 - A interação entre o kernel do sistema operacional e os drivers de dispositivo
 - A tradução final das instruções para o formato binário (0 e 1) executado pelo hardware
+
+## Resposta
+- Código em C
+#include <stdio.h>
+
+int main() {
+    int a, b, soma;
+    printf("Digite o valor de a: ");
+    scanf("%d", &a);
+    printf("Digite o valor de b: ");
+    scanf("%d", &b);
+    soma = a + b;
+    printf("A soma de %d e %d é: %d\n", a, b, soma);
+    return 0;
+}
+- O processo de compilação no caso do C
+
+Primeiro é necessário digitar o código, logo em seguida o código deve ser compilado pelo seguinte comando "gcc soma.x -o soma", durante a execução é feito uma linkagem com as bibliotecas nesse caso representado pela linha "include <stdio.h>", apos isso basta digitar  /soma para executar o programa caso não tenha erros o programa deve exibir a soma de a + b.
+
+- A interação entre o kernel do sistema operacional e os drivers de dispositivo
+
+No código disposto apesar o código não interagir diretamente com os drivers a interação entre o kernel do sistema operacional e os drivers de dispositivo é feita principalmente durante as operações de entrada e saida (printf, scanf).
+
+- A tradução final das instruções para o formato binário (0 e 1) executado pelo hardware
+
+???
+
+- Código em python
+
+a = int(input("Digite o primeiro número: "))
+b = int(input("Digite o primeiro número: "))
+print(a+b)
+
+- O papel do interpretador no caso do Python
+
+No caso do código em python o interpretador lê o código linha por linha depois traduz o código para que a máquina consiga enteder as intruções que foram demandadas, sendo assim, o programado não precisa se preocupar com questões de alocação de memória e gerenciamento de tipos.
+
+- A interação entre o kernel do sistema operacional e os drivers de dispositivo
+
+No casod o código em python a interação entre o kernel do sistema operacional e os drivers de dispositivo ocorre de forma clara para o programador, o Python por meio do kernel, interage com o hardware do computador para obter dados de entrada (do teclado) e exibir resultados na saída (tela), os drivers gerenciam a comunicação entre softwares e dispositivos garantindo que o processo seja executada de forma correta.
+
+- A tradução final das instruções para o formato binário (0 e 1) executado pelo hardware
+
+???
 
 **Dica:** Compare e contraste os dois processos, destacando as principais diferenças e semelhanças na forma como as instruções são processadas e executadas.
 
